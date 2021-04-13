@@ -1,0 +1,25 @@
+body{
+    font-family: 'Nunito sans', sans-serif; 
+    color: #000000;     
+    text-align:center; 
+    padding: 20px;
+}
+.game-section{
+    height: 100vh;
+    max-width: 1600px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* margin: 0 auto; */
+    border: 1px solid grey;
+}
+.flex-container .block{
+    width: 50%;
+    border: 1px solid grey;
+}
+.flex-container .score{
+    border: 1px solid grey;
+    width: 10%;
+}
