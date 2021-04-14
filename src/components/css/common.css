@@ -1,0 +1,129 @@
+/* Difficulty component */
+.main-container .difficulty{
+    margin: 50px auto;
+}
+.difficulty input[type="radio"]{
+    display: none;
+}
+.difficulty label{
+    cursor: pointer;
+    border: 1px solid slateblue;
+    padding: 10px;
+    margin: 0 5px;
+}
+.difficulty input[type="radio"]:checked+label{
+    background-color: slateblue;
+    color: white;
+}
+
+/* Button */
+.main-container button{
+    margin: 20px auto;
+    border: none;
+    border: 1px solid slateblue;
+    background-color: slateblue;
+    border-radius: 11px;
+    width: 40%;
+    padding: 15px 3px;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+.main-container button:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+/* Random */
+.random-number{
+    height: 40px;
+    font-size: 30px;
+}
+
+/* Letter Input */
+
+.letter-wrapper input{
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(189, 189, 189);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ /* Result */
+
+ .random-last h4{
+    text-transform: uppercase;
+ }
+ .random-last span{
+     text-transform: uppercase;
+     font-size: 25px;
+ }
+/* List */
+
+.list{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.list .letter-wrapper{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 5px 10px;
+    width: 80px;
+    max-width: 80px;
+    list-style-type: none;
+}
+.list .letter-wrapper .letter{
+    margin-right: 5px;
+}
+.list .letter-wrapper.red{
+    color:red;
+}
+.list .letter-wrapper.green{
+    color:rgb(10, 209, 10);
+}
+.score div, .score h2{
+    text-align: right;
+}
+.score span{
+    margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.score .green-score{
+    color: yellowgreen;
+}
+.score .red-score{
+    color: red;
+}
+.score .purple-score{
+    color:slateblue
+}
+
+@media screen and (max-width: 900px) {
+    .score {
+     position: fixed;
+     bottom: 0;
+     background-color: rgb(252, 220, 205);
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding:  20px;
+    }
+    .score span{
+        font-size: 20px;
+    }
+    .letter-wrapper input{
+        font-size: 20px;
+    }
+    
+  }

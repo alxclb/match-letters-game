@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/layout.css";
+import "../css/common.css";
 
 export const Layout = ({ children }) => (
     <section className="game-section">{children}</section>

@@ -1,10 +1,10 @@
 import React from "react";
 
-export const Letter = ({ letter, number }) => {
+export const Letter = ({ letter, number, color }) => {
     return (
-    <div className="letter-wrapper">
-        <span className="letter">{letter}</span>
-        <span className="number">({number})</span>
-    </div>
-    )
+        <li key={number} className={"letter-wrapper " + color}>
+            <span className="letter">{letter}</span>
+            <span className="number">({number})</span>
+        </li>
+    );
 };

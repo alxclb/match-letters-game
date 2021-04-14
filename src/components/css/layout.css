@@ -1,25 +1,30 @@
-body{
-    font-family: 'Nunito sans', sans-serif; 
-    color: #000000;     
-    text-align:center; 
+body {
+    font-family: "Nunito sans", sans-serif;
+    color: #000000;
+    text-align: center;
     padding: 20px;
 }
-.game-section{
+.game-section {
     height: 100vh;
     max-width: 1600px;
+    margin: 20px auto;
 }
-.flex-container{
+.flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* margin: 0 auto; */
-    border: 1px solid grey;
 }
-.flex-container .block{
+.flex-container .block {
     width: 50%;
-    border: 1px solid grey;
 }
-.flex-container .score{
-    border: 1px solid grey;
+.flex-container .score {
     width: 10%;
+}
+@media screen and (max-width: 900px) {
+    .flex-container .block {
+        width: 100%;
+    }
+    .flex-container .score {
+        width: 100%;
+    }
 }

@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ScoreContext } from '../../score-context';
 
 
-export const Score = ({hit, miss, left})=>{
+export const Score = ()=>{
+    let {score} = useContext(ScoreContext)
     return (
         <div className="score">
             <h2>Score</h2>
-            <div><span>Hit:</span><span>{hit}</span></div>
-            <div><span>Miss</span><span>{miss}</span></div>
-            <div><span>Left</span><span>{left}</span></div>
+            <div className="green-score"><span>Hit:</span><span>{score.hit}</span></div>
+            <div className="red-score"><span>Miss:</span><span>{score.miss}</span></div>
+            <div className="purple-score"><span>Left:</span><span>{score.left}</span></div>
         </div>
     )
 }
