@@ -1,5 +1,5 @@
 
-# ALPHABET-REFLEX-GAME
+# Match Letters Game
 
 Goal of the game is to match all the letters with corresponding numbers.
 
